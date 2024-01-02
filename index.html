@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Intro Section With Dropdown Navigation</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navitems">
+      <h1 style="font-size: 32px; margin-right: 20px;">snap</h1>
+      <!-- When clicked on img src attribute will be changed -->
+      <div>Features
+        <img src="images/icon-arrow-down.svg" class="arrowdown">
+        <img src="images/icon-arrow-up.svg" class="arrowup hidden">
+        <!-- visibility of up arrow is set to <hidden -->
+        <!-- Set ul list-style to none -->
+        <!-- Do proper padding to li items -->
+        <!-- Set font-size -->
+        <ul class="hidden">
+          <li> <img src="images/icon-todo.svg" width="12px"> &nbsp; List</li>
+          <li> <img src="images/icon-calendar.svg" width="12px"> &nbsp; Calender</li>
+          <li> <img src="images/icon-reminders.svg" width="12px"> &nbsp; Remainders</li>
+          <li> <img src="images/icon-planning.svg" width="12px"> &nbsp; Planning</li>
+        </ul>
+      </div>
+
+      <div>
+        Company
+        <img src="images/icon-arrow-down.svg" class="arrowdown">
+        <img src="images/icon-arrow-up.svg" class="arrowup hidden">
+        <ul class="hidden">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+
+      <div>Careers</div>
+      <div>About</div>
+    </div>
+    <div class="navlogin">
+      <p>Login</p>
+      <p class="register">Register</p>
+      <!-- Borders for register -->
+    </div>
+  </div>
+  
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>

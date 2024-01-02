@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+body {
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.navbar {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.navbar, .navitems, .navlogin {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navitems > * {
+  padding: 0 10px;
+  padding-right: 20px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.navlogin > * {
+  padding: 0 10px;
+  padding-right: 20px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.register {
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.hidden {
+  display: none;
+}
