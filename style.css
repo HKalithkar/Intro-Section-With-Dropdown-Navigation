@@ -1,45 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 
 body {
-  box-sizing: border-box;
-  font-family: 'Epilogue', sans-serif;
-  background-color: hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+li {
+    padding: 0px 25px;
+}
+
+header {
+    margin: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .navbar {
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0px 50px;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
+.sections, .login {
+    display: flex;
+    align-items: center;
 }
 
-.navbar > div > * {
-  padding: 0 10px;
-  padding-right: 20px;
-  align-self: center;
-  cursor: pointer;
-}
-
-#snap {
-  font-size: 32px;
-  margin-right: 20px;
-}
-
-#careers {
-  color: hsl(0, 0%, 41%);
-  cursor: default
-}
-
-#register {
-  padding: 15px;
-  border: 2px solid black;
-  border-radius: 15px;
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
 }
 
 .hidden {
-  display: none;
+    display: none;
+}
+
+.innerList {
+    position: absolute;
+    top: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+#features > ul {
+    left: -50px;;
+}
+
+.innerList > li {
+    padding: 10px 5px;
+}
+
+#careers {
+    color: hsl(0, 0%, 41%);
+}
+
+#register {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
 }

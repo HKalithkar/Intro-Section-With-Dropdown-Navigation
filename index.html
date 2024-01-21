@@ -1,55 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Intro Section With Dropdown Navigation</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown-Navigation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <img src="images/logo.svg" alt="Snap-Logo">
+        <div class="navbar">
+            <ul class="sections">
+                <li id="features"><a href="#">Features</a> 
+                    <img src="images/icon-arrow-down.svg" alt="Down-Arrow">
+                    <img src="images/icon-arrow-up.svg" alt="Up-Arrow" class="hidden">
+                    <ul class="innerList hidden">
+                        <li><img src="images/icon-todo.svg" alt="Todo" width="15px"> &nbsp;Todo List</li>
+                        <li><img src="images/icon-calendar.svg" alt="Calender" width="15px"> &nbsp;Calender</li>
+                        <li><img src="images/icon-reminders.svg" alt="Reminders" width="15px"> &nbsp;Reminders</li>
+                        <li><img src="images/icon-planning.svg" alt="Planning" width="15px"> &nbsp;Planning</li>
+                    </ul>
+                </li>
+                <li id="company"><a href="#">Company</a>
+                    <img src="images/icon-arrow-down.svg" alt="Down-Arrow">
+                    <img src="images/icon-arrow-up.svg" alt="Up-Arrow" class="hidden">
+                    <ul class="innerList hidden">
+                        <li>History</li>
+                        <li>Our Team</li>
+                        <li>Blog</li>
+                    </ul>
+                </li>
+                <li id="careers">Careers</li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">Login</a></li>
+                <li id="register"><a href="#">Register</a></li>
+            </ul>
 
-<!-- In Navigation Bar
-  In features division the images arrowup and arrowdown get toggled each time when clicked, also the unordered list is hidden initially and is shown when arrowdown is clicked.
-  Similarly company division have these two images
-  list-style is set to none -->
-  
-  <div class="navbar nav">
-    <div class="navitems nav">
-      <h1 id="snap">snap</h1>
-      <div id="features">Features
-        <img src="images/icon-arrow-down.svg" class="arrowdown">
-        <img src="images/icon-arrow-up.svg" class="arrowup hidden">
-        <ul class="hidden">
-          <li> <img src="images/icon-todo.svg" width="12px"> &nbsp; List</li>
-          <li> <img src="images/icon-calendar.svg" width="12px"> &nbsp; Calender</li>
-          <li> <img src="images/icon-reminders.svg" width="12px"> &nbsp; Remainders</li>
-          <li> <img src="images/icon-planning.svg" width="12px"> &nbsp; Planning</li>
-        </ul>
-      </div>
-
-      <div id="company">
-        Company
-        <img src="images/icon-arrow-down.svg" class="arrowdown">
-        <img src="images/icon-arrow-up.svg" class="arrowup hidden">
-        <ul class="hidden">
-          <li>History</li>
-          <li>Our Team</li>
-          <li>Blog</li>
-        </ul>
-      </div>
-
-      <div id="careers">Careers</div>
-      <div id="about">About</div>
-    </div>
-    <div class="navlogin nav">
-      <p id="login">Login</p>
-      <p id="register">Register</p>
-    </div>
-  </div>
-  
-  <script type="module" src="script.js"></script>
+            <script src="index.js"></script>
+        </div>
+    </header>
 </body>
-
 </html>
