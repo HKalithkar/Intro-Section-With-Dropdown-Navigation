@@ -16,3 +16,14 @@ company.addEventListener("click", function() {
     }
     document.querySelector("#company > .innerList").classList.toggle("hidden");
 })
+
+var menu = document.querySelectorAll(".menu");
+var mobile = document.querySelectorAll(".mobile");
+
+for(var i=0; i<menu.length; i++) {
+    menu[i].addEventListener("click", function() {
+        for(var j=0; j<mobile.length; j++) {
+            mobile[j].classList.toggle("mobile");
+        }
+    })
+}
