@@ -2,9 +2,10 @@
 
 * {
     margin: 0;
-}
-body {
     font-family: 'Epilogue', sans-serif;
+}
+
+body {
     background-color: hsl(0, 0%, 98%);
 }
 
@@ -19,7 +20,10 @@ li {
 }
 
 header {
-    margin: 15px;
+    background-color: hsl(0, 0%, 98%);
+    position: fixed;
+    width: 100vw;
+    padding: 15px;
     display: flex;
     align-items: center;
 }
@@ -75,8 +79,72 @@ a {
 
 .menu {
     display: none;
-    padding-bottom: 10px;
 }
+
+/* Main */
+
+main {
+    padding: 150px 100px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+main > * {
+    flex: 1;
+    flex-grow: 0;
+}
+
+div.maindiv {
+    align-self: center;
+}
+
+main > img {
+    max-width: 450px;
+    max-height: 600px;
+}
+
+div.maindiv {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mainitem {
+    padding: 25px 0px;
+}
+
+h2.mainitem {
+    font-size: 76px;
+}
+
+div.mainitem {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+button.mainitem {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+button.mainitem:hover {
+    background-color: hsl(0, 0%, 98%);;
+    color: black;
+}
+
+.mobile-image {
+    display: none;
+}
+
 
 @media (max-width: 950px) {
     header {
@@ -127,7 +195,7 @@ a {
         cursor: pointer;
         display: block;
         align-self: flex-end;
-        padding: 20px 0px;
+        padding: 20px 30px;
     }
 
     .mobile {
@@ -136,5 +204,33 @@ a {
 
     img.mobile {
         display: block;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    main > div {
+        order: 1;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+
+    main > img {
+        max-width: 950px;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1150px) {
+    main {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
