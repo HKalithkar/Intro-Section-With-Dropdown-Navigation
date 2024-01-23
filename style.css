@@ -228,6 +228,14 @@ button.mainitem:hover {
     main > img {
         max-width: 950px;
     }
+
+    .maindiv > * {
+        align-self: center;        ;
+    }
+
+    h2.mainitem {
+        font-size: 40px;
+    }
 }
 
 @media (min-width: 950px) and (max-width: 1150px) {
